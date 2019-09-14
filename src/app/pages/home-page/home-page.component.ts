@@ -56,7 +56,7 @@ export class HomePageComponent implements OnInit {
     // IF ALL ARE EMPTY FIELDS
     if(!this.skills && !this.experience && !this.location && !this.companyname){
       this.showAllData()
-    }//IF ALL ARE FILLED
+    }//IF ALL ARE FILLED FIELDS
     else if(this.skills && this.experience && this.location && this.companyname){
       this.searchAllFilter()
     }
@@ -88,7 +88,7 @@ export class HomePageComponent implements OnInit {
     }
   }
 
-  /* SEARCH FOR ALL FILLED DATA*/
+  /* SEARCH FOR ALL FILLED FIELD DATA*/
   searchAllFilter(){
     this.loading = true
     this.http.get('https://nut-case.s3.amazonaws.com/jobs.json').subscribe(data => {
@@ -107,7 +107,7 @@ export class HomePageComponent implements OnInit {
     })
   }
 
-  /* SINGLE DATA CHECK */
+  /* SINGLE FIELD DATA CHECK */
   singleDataFiler(item, text){
     var log
     this.loading = true
@@ -128,7 +128,7 @@ export class HomePageComponent implements OnInit {
     })
   }
 
-  /* DOUBLE DATA CHECK */
+  /* DOUBLE FIELD DATA CHECK */
   doubleDataFilter(item1, item2, text1, text2){
     var log1, log2
     this.loading = true
