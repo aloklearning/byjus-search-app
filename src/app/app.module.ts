@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
+import { JobCardComponent } from './widget/job-card/job-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    JobCardComponent
   ],
   imports: [
     BrowserModule,

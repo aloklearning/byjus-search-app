@@ -23,7 +23,7 @@ export class HomePageComponent implements OnInit {
   }
 
   search(){
-    
+
   }
 
 }

@@ -1,0 +1,5 @@
+div.job-card-content{ margin-right: 21rem}
+
+@media (max-width: 850px){
+    div.job-card-content{ margin-right: 0 !important}
+}
