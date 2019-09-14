@@ -171,7 +171,7 @@ export class HomePageComponent implements OnInit {
     if(filtered.length == 0){
       this.totJobs = 0
       this.updateData([])
-      this.message = "No jobs found for the specified search"
+      this.message = "No jobs found for this specified search. Please try again"
       this.loading = false
     }else{
       this.totJobs = filtered.length
