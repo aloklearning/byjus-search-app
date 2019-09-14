@@ -1,1 +1,27 @@
-<p>home-page works!</p>
+<div class="home-content overflow-auto">
+    <div class="container">
+        <div class="row mt-3">
+            <h1 class="col-8 col-md-8" style="color: #813588">Welcome Home</h1>
+            <h4 class="col-1 col-md-4 mt-2" style="color: steelblue; cursor: pointer; text-align: right" (click)="logout()">Logout</h4>
+        </div>
+
+        <h4 class="mt-5" style="color: darkolivegreen">Please type in your requirements to find your suitable result, 
+            you may also search as per the specific fields too</h4>
+        <br><br>
+        <div class="row pl-md-3">
+            <div class="col-md-3 col-12 mb-3 pl-md-0">
+                <input type="text" class="form-control" placeholder="Skills" [(ngModel)]="skills">
+            </div>
+            <div class="col-md-3 col-12 mb-3 pl-md-0">
+                <input type="text" class="form-control" placeholder="Experience" [(ngModel)]="experience">
+            </div>
+            <div class="col-md-3 col-12 mb-3 pl-md-0">
+                <input type="text" class="form-control" placeholder="Location" [(ngModel)]="location">
+            </div>
+            <div class="col-md-3 col-12 mb-3 pl-md-0">
+                <input type="text" class="form-control" placeholder="Company" [(ngModel)]="companyname">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 col-2 pl-3 ml-md-0 ml-3" (click)="search()">Search</button>
+        </div> 
+    </div>
+</div>
