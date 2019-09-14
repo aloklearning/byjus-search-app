@@ -3,6 +3,7 @@
         <a href="{{job.applylink}}" target="_blank" style="font-size: 18px; font-weight: bold">{{job.title}}</a>
         <p style="font-size: 16px; margin-bottom: 0" *ngIf="job.experience">{{job.experience}}</p>
         <p style="font-size: 16px; margin-bottom: 0" *ngIf="job.companyname">{{job.companyname}}</p>
+        <p style="font-size: 16px; margin-bottom: 0; color:slategrey" *ngIf="job.skills">Skills: {{job.skills}}</p>
         <p style="font-size: 16px; margin-bottom: 0" *ngIf="job.location">{{job.location}}</p>
         <p style="font-size: 15px; margin-bottom: 0; font-weight: bold" *ngIf="job.salary">{{job.salary}}</p>
         <p style="font-size: 16px; margin-top: 6px ; color: grey">{{job.jd}}</p>
