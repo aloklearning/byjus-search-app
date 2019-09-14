@@ -23,11 +23,23 @@
             </div>
             <button type="submit" class="btn btn-primary mb-2 col-2 pl-3 ml-md-0 ml-3" (click)="search()">Search</button>
         </div> 
+        <p style="font-size: 20px; margin-top: 10px">Total number of jobs: {{totJobs}} found</p>
+
+        <!-- For displaying the message regarding search -->
+        <p *ngIf="message" style="font-size: 18px"><br>{{message}}</p>
+        <!-- For displaying loading while fetching data -->
+        <p *ngIf="loading" style="font-size: 18px"><br>Loading please wait...</p>
+
         <br><br>
 
         <!-- This is where the job-card from wiget is used -->
-        <ng-container>
-            <app-job-card></app-job-card>
+        <ng-container *ngFor="let group of data | paginate: { itemsPerPage: 15, currentPage: page }">
+            <ng-container *ngFor="let job of group.jobs">
+                <app-job-card [job]="job"></app-job-card>
+            </ng-container>
         </ng-container>
+        <div class="pagination-content mt-3 mb-3" *ngIf="!loading">
+            <pagination-controls (pageChange)="page = $event"></pagination-controls>
+        </div>
     </div>
 </div>

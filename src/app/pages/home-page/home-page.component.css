@@ -7,3 +7,10 @@ div.content{
     left: 0;
     background:silver
 }
+
+div.pagination-content{margin-left: 4rem}
+ 
+/* MEDIA QUERY */
+@media (max-width: 850px){
+    div.pagination-content{margin-left: 0 !important}
+ }
