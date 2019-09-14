@@ -8,6 +8,17 @@ div.content{
     background: #813588
 }
 
+.btn-primary{
+    margin-top: 35px; 
+    cursor: pointer; 
+    border-radius: 40px; 
+    line-height: 25px;                 
+    background: #813588; 
+    width: 100%;
+    border-color: #813588
+}
+.btn-primary:hover{background: blueviolet; border-color: blueviolet}
+
 div.card-container{ margin: 10px auto auto auto; width: 500px}
 
 @media (max-width: 850px){

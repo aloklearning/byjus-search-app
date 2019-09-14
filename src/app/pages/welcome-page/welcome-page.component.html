@@ -12,7 +12,8 @@
                     <input type="text" class="mb-3 form-control" [(ngModel)]="email">
                     <p style="color: #4b4b4b; font-weight: bold; font-size: 15px; margin-bottom: 7px">Password</p>
                     <input type="password" class="form-control" [(ngModel)]="password">
-                    <button style="margin-top: 35px; cursor: pointer; border-radius: 40px; line-height: 25px; width: 100%" type="button" class="btn btn-primary mb-2" (click)="signIn()">Sign In</button>
+                    <button type="button" class="btn btn-primary mb-2" (click)="signIn()">Sign In</button>
+
                     <p style="font-size: 15px; margin-bottom: 0 !important" *ngIf="message">{{message}}</p>
                 </div>
                 <div class="card-footer bg-white text-center">
