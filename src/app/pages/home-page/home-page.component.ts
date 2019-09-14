@@ -27,7 +27,7 @@ export class HomePageComponent implements OnInit {
     this.showAllData()
   }
 
-  logout(){
+  signOut(){
     this.router.navigate(['/'], {replaceUrl: true})
   }
 

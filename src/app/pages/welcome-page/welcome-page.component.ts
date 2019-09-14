@@ -16,7 +16,7 @@ export class WelcomePageComponent implements OnInit {
   ngOnInit() {
   }
 
-  submit(){
+  signIn(){
     if(this.email && this.password)
       this.router.navigate(['/home'], {replaceUrl: true})
     else
