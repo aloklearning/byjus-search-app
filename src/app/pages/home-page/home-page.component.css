@@ -6,7 +6,7 @@ div.home-content{
 }
 
 .btn-primary{cursor: pointer; background: #813588; border-color: #813588}
-.btn-primary:hover{background: blueviolet; border-color: blueviolet}
+.btn-primary:hover{background: #421f65; border-color: #421f65}
 
 div.pagination-content{margin-left: 4rem}
  

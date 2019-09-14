@@ -17,7 +17,7 @@ div.content{
     width: 100%;
     border-color: #813588
 }
-.btn-primary:hover{background: blueviolet; border-color: blueviolet}
+.btn-primary:hover{background: #421f65; border-color: #421f65}
 
 div.card-container{ margin: 10px auto auto auto; width: 500px}
 
