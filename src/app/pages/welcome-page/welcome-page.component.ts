@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-welcome-page',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome-page.component.css']
 })
 export class WelcomePageComponent implements OnInit {
-
-  constructor() { }
+  message: string
+  email: string = ""
+  password: string = ""
+  
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  submit(){
+    if(this.email && this.password)
+      this.router.navigate(['/home'], {replaceUrl: true})
+    else
+      window.alert('All fields are mandatory')
   }
 
 }
