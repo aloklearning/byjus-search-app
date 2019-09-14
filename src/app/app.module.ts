@@ -4,14 +4,22 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomePageComponent,
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {path: '/', component: WelcomePageComponent},
+      {path: '/home', component: HomePageComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
