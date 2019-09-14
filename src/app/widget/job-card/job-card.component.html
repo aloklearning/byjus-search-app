@@ -2,16 +2,16 @@
     <div class="card bg-white" style="height: auto; padding: 10px">
         <a href="{{job.applylink}}" target="_blank" style="font-size: 18px; font-weight: bold">{{job.title}}</a>
         <p style="font-size: 16px; margin-bottom: 0" *ngIf="job.experience">{{job.experience}}</p>
+        <p style="font-size: 14px; margin-bottom: 0" *ngIf="job.type">Job Type: {{job.type}}</p>
         <p style="font-size: 16px; margin-bottom: 0" *ngIf="job.companyname">{{job.companyname}}</p>
         <p style="font-size: 16px; margin-bottom: 0; color:slategrey" *ngIf="job.skills">Skills: {{job.skills}}</p>
         <p style="font-size: 16px; margin-bottom: 0" *ngIf="job.location">{{job.location}}</p>
         <p style="font-size: 15px; margin-bottom: 0; font-weight: bold" *ngIf="job.salary">{{job.salary}}</p>
         <p style="font-size: 16px; margin-top: 6px ; color: grey">{{job.jd}}</p>
         <div class="row">
-            <p class="col-3" style="font-size: 13px; margin-bottom: 0" *ngIf="job.created">Created: {{job.created}}</p>
-            <p class="col-3" style="font-size: 13px; margin-bottom: 0" *ngIf="job.enddate">Expiring: {{job.enddate}}</p>
-            <p class="col-3" style="font-size: 13px; margin-bottom: 0" *ngIf="job.type">Type: {{job.type}}</p>
-            <p class="col-3" style="color: rebeccapurple ;font-size: 13px; margin-bottom: 0" *ngIf="job.source">Source: {{job.source}}</p>
+            <p class="col-4" style="font-size: 13px; margin-bottom: 0" *ngIf="job.created">Created: {{job.created}}</p>
+            <p class="col-4" style="font-size: 13px; margin-bottom: 0" *ngIf="job.enddate">Expiring: {{job.enddate}}</p>
+            <p class="col-4" style="color: rebeccapurple ;font-size: 13px; margin-bottom: 0" *ngIf="job.source">Source: {{job.source}}</p>
         </div>
     </div>
 </div>
