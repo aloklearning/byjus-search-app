@@ -82,7 +82,9 @@ export class HomePageComponent implements OnInit {
       }// LOCATION & COMPANY
       else if(!this.skills && !this.experience && this.location && this.companyname){
         this.doubleDataFilter("location", "company", this.location, this.companyname)
-      }
+      }/* FOR ANY THREE NON-EMPTY FIELDS: SKILLS & EXPERIENCE & LOCATION -> SKILLS & EXPERIENCE & COMPANY
+       -> SKILLS & LOCATION & COMPANY */
+       
     }
   }
 

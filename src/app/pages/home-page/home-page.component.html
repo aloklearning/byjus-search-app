@@ -1,12 +1,12 @@
 <div class="home-content overflow-auto">
     <div class="container">
-        <div class="row mt-3">
+        <div class="row pt-3">
             <h1 class="col-8 col-md-8" style="color: #813588">Welcome Home</h1>
             <h4 class="col-1 col-md-4 mt-2" style="color: steelblue; cursor: pointer; text-align: right" (click)="logout()">Logout</h4>
         </div>
 
         <h4 class="mt-5" style="color: darkolivegreen">Please type in your requirements to find your suitable result, 
-            you may also search as per the specific fields too</h4>
+            you may also search as per the specific field too</h4>
         <br><br>
         <div class="row pl-md-3">
             <div class="col-md-3 col-12 mb-3 pl-md-0">
@@ -38,7 +38,7 @@
                 <app-job-card [job]="job"></app-job-card>
             </ng-container>
         </ng-container>
-        <div class="pagination-content mt-3 mb-3" *ngIf="!loading && !message">
+        <div class="pagination-content mt-3 pb-2" *ngIf="!loading && !message">
             <pagination-controls (pageChange)="page = $event"></pagination-controls>
         </div>
     </div>
