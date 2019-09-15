@@ -13,4 +13,5 @@ div.pagination-content{margin-left: 4rem}
 /* MEDIA QUERY */
 @media (max-width: 850px){
     div.pagination-content{margin-left: 0 !important}
+    div.pagination-content /deep/ .ngx-pagination{padding-left: 0 !important}
  }
