@@ -26,8 +26,8 @@ JustSearch was generated with [Angular CLI](https://github.com/angular/angular-c
 ## Website
 
 - You can visit the website for live results on [JustSearch](http://just-search.surge.sh/)
-- **Credentials** to login these are the details
-    - **Email** - *testuser@gmail.com*
+- Credentials to login these are the details
+    - **Email** - `testuser@gmail.com`
     - **Passsword** - *password*
 
 ## Getting Started
