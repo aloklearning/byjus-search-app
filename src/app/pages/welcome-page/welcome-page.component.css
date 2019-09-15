@@ -8,6 +8,20 @@ div.content{
     background: #813588
 }
 
+.failed{
+    color: red;
+    font-size: 15px; 
+    margin-bottom: 0; 
+    padding-top: 10px
+}
+
+.success {
+    color: black;
+    font-size: 15px; 
+    margin-bottom: 0; 
+    padding-top: 10px
+}
+
 .btn-primary{
     margin-top: 35px; 
     cursor: pointer; 

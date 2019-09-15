@@ -12,11 +12,11 @@
                     <input type="text" class="mb-3 form-control" [(ngModel)]="email">
                     <p style="color: #4b4b4b; font-weight: bold; font-size: 15px; margin-bottom: 7px">Password</p>
                     <input type="password" class="form-control" [(ngModel)]="password">
-                    <button type="button" class="btn btn-primary mb-2" (click)="signIn()">Sign In</button>
+                    <button type="button" class="btn btn-primary" (click)="signIn()">Sign In</button>
 
-                    <p style="font-size: 15px; margin-bottom: 0 !important" *ngIf="message">{{message}}</p>
+                    <p [ngClass]="{'failed': isError, 'success': !isError}" *ngIf="message">{{message}}</p>
                 </div>
-                <div class="card-footer bg-white text-center">
+                <div class="card-footer bg-white text-center mt-0">
                     <p style="font-size: .875rem; color: 4b4b4b; margin-bottom: 0; font-weight: 400; line-height: 1.43">
                         This website is a prototype, in order to login please follow this 
                         <a href="https://github.com/aloklearning/byjus-search-app" target="_blank">link</a>
