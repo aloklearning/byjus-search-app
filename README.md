@@ -30,22 +30,22 @@ JustSearch was generated with [Angular CLI](https://github.com/angular/angular-c
     - **Email** - `testuser@gmail.com`
     - **Passsword** - *password*
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a dev server.
-
 ### Checklist
 
 - [x] Code accompanies the Unit Tests
 - [x] Usage is clearly mentioned in the README file, This including setup the project, how to run it, how to run unit test, examples 
 - [x] Uses the endpoint directly
 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a dev server.
+
 ### Prerequisites
 
 Before running the project on your localhost, please ensure these points:
-- You have **npm** in your box, if not than follow this link [NPM](https://www.npmjs.com/get-npm)
-- Angular(Latest i.e., v8.3.4) `Preferred` is installed in your system, if not follow this link [Angular CLI](https://github.com/angular/angular-cli)
-- Go to your root folder and install the packages `npm install` to avoid any packages conflicts
+[] You have **npm** in your box, if not than follow this link [NPM](https://www.npmjs.com/get-npm)
+[] Angular(Latest i.e., v8.3.4) `Preferred` is installed in your system, if not follow this link [Angular CLI](https://github.com/angular/angular-cli)
+[] Go to your root folder and install the packages `npm install` to avoid any packages conflicts
 
 
 ### Development server
