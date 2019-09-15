@@ -72,7 +72,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 - [Angular](https://angular.io/) - The javascript web framework used
 - [Typescript](https://www.typescriptlang.org/docs/home.html) - Programming language used
-- [Bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - For stlying
+- [Bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - For styling
 - [Surge](https://surge.sh/help/getting-started-with-surge) - For hosting
 
 ## Author
