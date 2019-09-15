@@ -7,6 +7,7 @@ JustSearch was generated with [Angular CLI](https://github.com/angular/angular-c
 - Webpage is completely responsive
 - Displays pagination
 - Single Sign in functionality via firebase
+- No search engines used, complete coding work
 - Can search/filter jobs based upon the specified field
     - User select the expirence or location or skill to search jobs
     - Any double fields searching
@@ -14,29 +15,29 @@ JustSearch was generated with [Angular CLI](https://github.com/angular/angular-c
     - All fields searching
 - Displays all job listings
 - Displays the total number of jobs found
-- Displays the total number of jobs forund base on user search
+- Displays the total number of jobs found base on user search
 
 ## Assumptions
 
 - **Display all expiring jobs lisintg** - All job listings with the expiring jobs is getting listed for smooth pagination effect
-- **SSO Implementation** - Single sign in with Firebase will work for this with user checks `isLoggedIn` and hacing transition accordingly
+- **SSO Implementation** - Single sign in with Firebase will suffice for this with user checks `isLoggedIn` and making page transition accordingly
 - **User is able to sort based on job location and experience** - For this two field search is enabled, sorting definitely is not filtering but we produce the result based upon those items, and the page does that
 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a dev server.
 
 ### Checklist
 
 - [x] Code accompanies the Unit Tests
-- [x] Usage is clearly mentioned in the README file, This including setup the project, how to run it, how to run unit test, examples,etc
+- [x] Usage is clearly mentioned in the README file, This including setup the project, how to run it, how to run unit test, examples 
 - [x] Uses the endpoint directly
 
 ### Prerequisites
 
 Before running the project on your localhost, please ensure these points:
-- You have `npm` in your box, is not than follow this link [NPM](https://www.npmjs.com/get-npm)
+- You have **npm** in your box, if not than follow this link [NPM](https://www.npmjs.com/get-npm)
 - Angular(Latest i.e., v8.3.4) `Preferred` is installed in your system, if not follow this link [Angular CLI](https://github.com/angular/angular-cli)
 - Go to your root folder and install the packages `npm install` to avoid packages conflicts
 
