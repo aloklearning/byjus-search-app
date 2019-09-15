@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
 import { JobCardComponent } from './widget/job-card/job-card.component';
+import { UserAuthService } from './service/user-auth.service';
 
 
 
@@ -37,7 +38,7 @@ import { JobCardComponent } from './widget/job-card/job-card.component';
       {path: 'home', component: HomePageComponent}
     ])
   ],
-  providers: [],
+  providers: [UserAuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
