@@ -1,6 +1,16 @@
 # JustSearch!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+JustSearch was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4. It is an angular web job serch prototype having the endpoint provided by **BYJU'S LEARNING APP**
+
+## Features
+
+- Webpage is completely responsive
+- Single Sign in functionality via firebase
+- Can search/filter jobs based upon the specified field
+    - Any single field search/sorting
+    - Any double fiels searching
+    - Any triple fields searching
+    - All fields searching
 
 ## Development server
 
