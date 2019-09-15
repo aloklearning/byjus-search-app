@@ -23,6 +23,12 @@ JustSearch was generated with [Angular CLI](https://github.com/angular/angular-c
 - **SSO Implementation** - Single sign in with Firebase will suffice for this with user checks `isLoggedIn` and making page transition accordingly
 - **User is able to sort based on job location and experience** - For this two field search is enabled, sorting definitely is not filtering but we produce the result based upon those items, and the page does that
 
+## Website
+
+- You can visit the website for live results on [JustSearch](http://just-search.surge.sh/)
+- **Credentials** to login these are the details
+    - **Email** - *testuser@gmail.com*
+    - **Passsword** - *password*
 
 ## Getting Started
 
@@ -67,6 +73,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 - [Angular](https://angular.io/) - The javascript web framework used
 - [Typescript](https://www.typescriptlang.org/docs/home.html) - Programming language used
 - [Bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Stlying
+- [Surge](https://surge.sh/help/getting-started-with-surge) - For hosting
 
 ## Author
 

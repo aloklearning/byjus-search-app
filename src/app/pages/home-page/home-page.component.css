@@ -5,7 +5,7 @@ div.home-content{
     left: 0
 }
 
-.btn-primary{cursor: pointer; background: #813588; border-color: #813588}
+.btn-primary{cursor: pointer; background: #813588; border-color: #813588; text-align: center}
 .btn-primary:hover{background: #421f65; border-color: #421f65}
 
 div.pagination-content{margin-left: 4rem}
