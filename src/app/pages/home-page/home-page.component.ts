@@ -41,7 +41,7 @@ export class HomePageComponent implements OnInit {
     })
   }
 
-  /* UPDATES DATA, HERE THE SEARCHED DATA IS INJECTED TO THE ARRAY OF OBJECT VARIABLE DATA */
+  /* UPDATES DATA, HERE THE SEARCHED/ALL DATA IS INJECTED TO THE ARRAY OF OBJECT VARIABLE DATA */
   updateData(jobs: Job[]){
     this.jobs = jobs
     this.data = []
@@ -84,11 +84,20 @@ export class HomePageComponent implements OnInit {
         this.doubleDataFilter("location", "company", this.location, this.companyname)
       }/* FOR ANY THREE NON-EMPTY FIELDS: SKILLS & EXPERIENCE & LOCATION -> SKILLS & EXPERIENCE & COMPANY
        -> SKILLS & LOCATION & COMPANY */
-       
+       else if(this.skills && this.experience && this.location && !this.companyname){
+          this.tripleDataFilter("skills", "experience", "location", this.skills, this.experience, this.location)
+       }else if(this.skills && !this.experience && this.location && this.companyname){
+          this.tripleDataFilter("skills", "location", "company", this.skills, this.location, this.companyname)
+       }else if(this.skills && this.experience && !this.location && this.companyname){
+          this.tripleDataFilter("skills", "experience", "company", this.skills, this.experience, this.companyname)
+       }// EXPERIENCE & LOCATION & COMPANY
+       else if(!this.skills && this.experience && this.location && this.companyname){
+          this.tripleDataFilter("experience", "location", "company", this.experience, this.location, this.companyname)
+       }
     }
   }
 
-  /* SEARCH FOR ALL FILLED FIELD DATA*/
+  /* SEARCH FOR ALL FILLED FIELD DATA */
   searchAllFilter(){
     this.loading = true
     this.http.get('https://nut-case.s3.amazonaws.com/jobs.json').subscribe(data => {
@@ -128,7 +137,7 @@ export class HomePageComponent implements OnInit {
     })
   }
 
-  /* DOUBLE FIELD DATA CHECK */
+  /* DOUBLE FIELDs DATA CHECK */
   doubleDataFilter(item1, item2, text1, text2){
     var log1, log2
     this.loading = true
@@ -159,6 +168,42 @@ export class HomePageComponent implements OnInit {
           //SEARCHING FOR THE TERM OPERATION
           if(log1.search(new RegExp(text1, "i")) != -1 && log2.search(new RegExp(text2, "i")) != -1) 
             filtered.push(job)
+        }
+      }
+      this.postFilter(filtered)
+    })
+  }
+
+  /* TRIPLE FIELDs DATA CHECK */
+  tripleDataFilter(item1, item2, item3, text1, text2, text3){
+    var log1, log2, log3
+    this.loading = true
+    this.http.get('https://nut-case.s3.amazonaws.com/jobs.json').subscribe(data => {
+      let filtered = [] //for populating filtered data
+      for(let job of cast(data['data'], Job)){
+        if(item1 == "skills" && item2 == "experience" && item3 == "location"){
+          log1 = job.skills; 
+          log2 = job.experience
+          log3 = job.location
+        }else if(item1 == "skills" && item2 == "location" && item3 == "company"){
+          log1 = job.skills; 
+          log2 = job.location
+          log3 = job.companyname
+        }else if(item1 == "skills" && item2 == "experience" && item3 == "company"){
+          log1 = job.skills; 
+          log2 = job.experience
+          log3 = job.companyname
+        }else{
+          log1 = job.experience; 
+          log2 = job.location
+          log3 = job.companyname
+        }
+
+        if(log1 && log2 && log3){
+          //SEARCHING FOR THE TERM OPERATION
+          if(log1.search(new RegExp(text1, "i")) != -1 
+          && log2.search(new RegExp(text2, "i")) != -1
+          && log3.search(new RegExp(text3, "i")) != -1) { filtered.push(job) }
         }
       }
       this.postFilter(filtered)
