@@ -15,18 +15,18 @@ JustSearch was generated with [Angular CLI](https://github.com/angular/angular-c
     - All fields searching
 - Displays all job listings
 - Displays the total number of jobs found
-- Displays the total number of jobs found base on user search
+- Displays the total number of jobs found based on user search
 
 ## Assumptions
 
-- **Display all expiring jobs lisintg** - All job listings with the expiring jobs is getting listed for smooth pagination effect
+- **Display all expiring jobs listing** - All job listings along with the expiring jobs is getting listed for smooth pagination effect
 - **SSO Implementation** - Single sign in with Firebase will suffice for this with user checks `isLoggedIn` and making page transition accordingly
 - **User is able to sort based on job location and experience** - For this two field search is enabled, sorting definitely is not filtering but we produce the result based upon those items, and the page does that
 
 ## Website
 
 - You can visit the website for live results on [JustSearch](http://just-search.surge.sh/)
-- Credentials to login these are the details
+- Credentials to login, these are the details
     - **Email** - `testuser@gmail.com`
     - **Passsword** - *password*
 
@@ -45,7 +45,7 @@ These instructions will get you a copy of the project up and running on your loc
 Before running the project on your localhost, please ensure these points:
 - You have **npm** in your box, if not than follow this link [NPM](https://www.npmjs.com/get-npm)
 - Angular(Latest i.e., v8.3.4) `Preferred` is installed in your system, if not follow this link [Angular CLI](https://github.com/angular/angular-cli)
-- Go to your root folder and install the packages `npm install` to avoid packages conflicts
+- Go to your root folder and install the packages `npm install` to avoid any packages conflicts
 
 
 ### Development server
