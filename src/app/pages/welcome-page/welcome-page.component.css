@@ -1,5 +1,5 @@
 div.content{ 
-    overflow: hidden;
+    overflow: auto;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -22,5 +22,5 @@ div.content{
 div.card-container{ margin: 10px auto auto auto; width: 500px}
 
 @media (max-width: 850px){
-    div.card-container { width: 100% }
+    div.card-container { width: 100%; padding-bottom: 100px}
 }
