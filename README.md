@@ -28,7 +28,7 @@ JustSearch was generated with [Angular CLI](https://github.com/angular/angular-c
 - You can visit the website for live results on [JustSearch](http://just-search.surge.sh/)
 - Credentials to login, these are the details
     - **Email** - `testuser@gmail.com`
-    - **Passsword** - *password*
+    - **Password** - *password*
 
 ### Checklist
 
@@ -43,7 +43,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Before running the project on your localhost, please ensure these points:
-- [ ] You have **npm** in your box, if not than follow this link [NPM](https://www.npmjs.com/get-npm)
+- [ ] You have **npm** in your box, if not than follow this link [npm](https://www.npmjs.com/get-npm)
 - [ ] Angular(Latest i.e., v8.3.4) `Preferred` is installed in your system, if not follow this link [Angular CLI](https://github.com/angular/angular-cli)
 - [ ] Go to your root folder and install the packages `npm install` to avoid any packages conflicts
 
@@ -72,7 +72,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 - [Angular](https://angular.io/) - The javascript web framework used
 - [Typescript](https://www.typescriptlang.org/docs/home.html) - Programming language used
-- [Bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Stlying
+- [Bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - For stlying
 - [Surge](https://surge.sh/help/getting-started-with-surge) - For hosting
 
 ## Author
