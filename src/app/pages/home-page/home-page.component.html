@@ -38,7 +38,7 @@
                 <app-job-card [job]="job"></app-job-card>
             </ng-container>
         </ng-container>
-        <div class="pagination-content mt-3 pb-2" *ngIf="!loading && !message">
+        <div class="pagination-content mt-3" *ngIf="!loading && !message">
             <pagination-controls (pageChange)="page = $event"></pagination-controls>
         </div>
     </div>

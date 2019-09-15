@@ -1,0 +1,12 @@
+div.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: whitesmoke;
+    background-color: #5f2165;
+    text-align: center
+}
+
+a{ color: whitesmoke; text-decoration: none }
+a:hover{ color: rgba(193, 45, 206, 0.5)}
