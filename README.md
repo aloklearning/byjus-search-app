@@ -43,9 +43,9 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Before running the project on your localhost, please ensure these points:
-[] You have **npm** in your box, if not than follow this link [NPM](https://www.npmjs.com/get-npm)
-[] Angular(Latest i.e., v8.3.4) `Preferred` is installed in your system, if not follow this link [Angular CLI](https://github.com/angular/angular-cli)
-[] Go to your root folder and install the packages `npm install` to avoid any packages conflicts
+- [] You have **npm** in your box, if not than follow this link [NPM](https://www.npmjs.com/get-npm)
+- [] Angular(Latest i.e., v8.3.4) `Preferred` is installed in your system, if not follow this link [Angular CLI](https://github.com/angular/angular-cli)
+- [] Go to your root folder and install the packages `npm install` to avoid any packages conflicts
 
 
 ### Development server
