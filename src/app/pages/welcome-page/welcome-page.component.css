@@ -31,6 +31,9 @@ div.content{
     width: 100%;
     border-color: #813588
 }
+
+a{color: whitesmoke; text-decoration: none}
+a:hover{color: #ef3aff }
 .btn-primary:hover{background: #421f65; border-color: #421f65}
 
 div.card-container{ margin: 10px auto auto auto; width: 500px}
