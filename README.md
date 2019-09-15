@@ -16,6 +16,13 @@ JustSearch was generated with [Angular CLI](https://github.com/angular/angular-c
 - Displays the total number of jobs found
 - Displays the total number of jobs forund base on user search
 
+## Assumptions
+
+- **Display all expiring jobs lisintg** - All job listings with the expiring jobs is getting listed for smooth pagination effect
+- **SSO Implementation** - Single sign in with Firebase will work for this with user checks `isLoggedIn` and hacing transition accordingly
+- **User is able to sort based on job location and experience** - For this two field search is enabled, sorting definitely is not filtering but we produce the result based upon those items, and the page does that
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -30,8 +37,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 Before running the project on your localhost, please ensure these points:
 - You have `npm` in your box, is not than follow this link [NPM](https://www.npmjs.com/get-npm)
-- [] Angular(Latest i.e., v8.3.4) `Preferred` is installed in your system, if not follow this link [Angular CLI](https://github.com/angular/angular-cli)
-- [] Go to your root folder and install the packages `npm install` to avoid packages conflicts
+- Angular(Latest i.e., v8.3.4) `Preferred` is installed in your system, if not follow this link [Angular CLI](https://github.com/angular/angular-cli)
+- Go to your root folder and install the packages `npm install` to avoid packages conflicts
 
 
 ### Development server
@@ -56,8 +63,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Built With
 
-- [ANGULAR](https://angular.io/) - The javascript web framework used
-- [TYPESCRIPT](https://www.typescriptlang.org/docs/home.html) - Programming language used
+- [Angular](https://angular.io/) - The javascript web framework used
+- [Typescript](https://www.typescriptlang.org/docs/home.html) - Programming language used
+- [Bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Stlying
 
 ## Author
 
