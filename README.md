@@ -87,7 +87,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## License
 
-
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/aloklearning/byjus-search-app/blob/master/LICENSE.md) file for details
 
 ## Further help
 
