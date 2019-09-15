@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { cast, Job } from 'src/app/model/model';
 import { HttpClient } from '@angular/common/http';
+import { UserAuthService } from 'src/app/service/user-auth.service';
 
 @Component({
   selector: 'app-home-page',
@@ -21,14 +22,17 @@ export class HomePageComponent implements OnInit {
   companyname: string
   data: {jobs: Job[]}[] = [] //this is main object which will store the searched/all data
 
-  constructor(private router: Router, private http: HttpClient) { }
+  constructor(
+    private router: Router, 
+    private http: HttpClient,
+    private auth: UserAuthService) { }
 
   ngOnInit() {
     this.showAllData()
   }
 
   signOut(){
-    this.router.navigate(['/'], {replaceUrl: true})
+    this.auth.singOut();
   }
 
   /* SHOWS ALL DATA FROM THE API RESPONSE */
