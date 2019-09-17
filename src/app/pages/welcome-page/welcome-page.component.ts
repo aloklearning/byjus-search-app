@@ -12,12 +12,13 @@ export class WelcomePageComponent implements OnInit {
   email: string = ""
   password: string = ""
   isError: boolean = false
-  currentYear = new Date().getFullYear
+  currentYear: any
   
   constructor(private router: Router, private auth: UserAuthService) { }
 
   ngOnInit() {
-    //LOGGED IN OR NOT
+    //CURRENT YEAR
+    this.currentYear = new Date().getFullYear
     if(this.auth.isLoggedIn)
       this.router.navigate(['/home'], {replaceUrl: true})
   }
