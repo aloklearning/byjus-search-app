@@ -18,7 +18,7 @@ export class WelcomePageComponent implements OnInit {
 
   ngOnInit() {
     //CURRENT YEAR
-    this.currentYear = new Date().getFullYear
+    this.currentYear = new Date().getFullYear()
     if(this.auth.isLoggedIn)
       this.router.navigate(['/home'], {replaceUrl: true})
   }
