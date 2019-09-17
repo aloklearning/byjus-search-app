@@ -12,6 +12,7 @@ export class WelcomePageComponent implements OnInit {
   email: string = ""
   password: string = ""
   isError: boolean = false
+  currentYear = new Date().getFullYear
   
   constructor(private router: Router, private auth: UserAuthService) { }
 
